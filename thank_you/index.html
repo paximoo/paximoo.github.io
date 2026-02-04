@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="icon" href="./favicon.ico" /> -->
     <title>Thank You!</title>
 
     <!-- Google Font -->
@@ -15,9 +16,16 @@
     <script src="script.js"></script>
   </head>
   <body>
+    <div class="animation-container">
+      <video autoplay playsinline class="animation">
+        <source src="media/FarewellAni.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
     <div class="card">
       <div class="top-greeter">
-        <img src="images/teacher.jpeg" />
+        <img src="media/teacher.jpeg" />
         <div style="flex-direction: row">
           <h1>Thank You, Ma'am 💙</h1>
           <p class="subtitle">
@@ -48,7 +56,7 @@
 
       <p class="signoff">
         With gratitude,<br />
-        <span>Computer Science Batch of 2025-26</span>
+        <span>Computer Science Batch of 2024-26</span>
       </p>
 
       <footer>
@@ -59,7 +67,10 @@
           <div class="tooltip-box" id="students-box"></div>
         </span>
         <div style="margin-top: 5px; font-size: 0.75rem">
-          Made by Audad Ahmed
+          Manim Animation by Taha Husain
+        </div>
+        <div style="margin-top: 5px; font-size: 0.75rem">
+          Webpage by Audad Ahmed
         </div>
       </footer>
     </div>

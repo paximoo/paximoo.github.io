@@ -30,14 +30,14 @@ const shuffle = (array) => {
 
 shuffle(students_list);
 
-document.addEventListener("DOMContentLoaded", () => {
+const loadStudents = () => {
   students_box = document.getElementById("students-box");
   for (let i = 0; i < 13; i++) {
     new_student_box = document.createElement("div");
     new_student_box.classList.add("student");
 
     new_student_img = document.createElement("img");
-    new_student_img.src = `images/students/${students_list[i]}.jpg`;
+    new_student_img.src = `media/students/${students_list[i]}.jpg`;
     new_student_box.appendChild(new_student_img);
 
     new_student_name = document.createElement("div");
@@ -52,4 +52,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     students_box.appendChild(new_student_box);
   }
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  document
+    .getElementsByClassName("animation")[0]
+    .addEventListener("ended", () => {
+      intro = document.getElementsByClassName("animation-container")[0];
+      intro.classList.add("fade-out");
+
+      document.getElementsByClassName("card")[0].classList.add("show");
+      setTimeout(() => {
+        intro.remove();
+      }, 800);
+    });
+
+  loadStudents();
 });

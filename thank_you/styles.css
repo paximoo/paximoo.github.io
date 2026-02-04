@@ -18,7 +18,7 @@ body {
 
 .card {
   background: white;
-  max-width: 800px;
+  max-width: 900px;
   padding: 50px 60px;
   margin: 20px;
 
@@ -26,6 +26,15 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 
   text-align: center;
+
+  opacity: 0;
+  visibility: hidden;
+  /* transition: opacity 0.8s ease; */
+}
+
+.card.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 h1 {
@@ -137,4 +146,21 @@ footer {
   height: 128px;
   width: 128px;
   border-radius: 50%;
+}
+
+.animation-container {
+  position: fixed;
+  inset: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animation-container.fade-out {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.animation {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }

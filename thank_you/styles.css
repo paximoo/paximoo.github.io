@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #e8f0ff, #fdfcff);
+  font-family: 'Inter', sans-serif;
+  color: #2b2b2b;
+}
+
+.card {
+  background: white;
+  max-width: 800px;
+  padding: 50px 60px;
+  margin: 20px;
+
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.divider {
+  /* width: 300px; */
+  height: 3px;
+  background: #4f7cff;
+  margin: 0 auto 30px;
+  border-radius: 2px;
+}
+
+p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.signoff {
+  margin-top: 35px;
+  font-size: 1.1rem;
+}
+
+.signoff span {
+  font-weight: 500;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-trigger {
+  color: #4f7cff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.tooltip-box {
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+
+  /* width: 260px; */
+  z-index: 10;
+}
+
+.tooltip-container:hover .tooltip-box {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.student {
+  display: flex;
+  gap: 8px;
+  text-align: center;
+  align-items: center;
+  font-size: 0.75rem;
+  width: 120px;
+}
+
+.student img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.top-greeter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: -30px;
+}
+
+.top-greeter img {
+  height: 128px;
+  width: 128px;
+  border-radius: 50%;
+}

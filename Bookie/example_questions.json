@@ -1,0 +1,53 @@
+{
+  "version": "1.0",
+  "topics": [
+    {
+      "name": "Hydrogen",
+      "class": 11,
+      "chapter": "Chapter 9 — Hydrogen",
+      "sections": [
+        {
+          "name": "Hydrogen Peroxide, Heavy Water & Hydrogen Economy",
+          "ncertRange": "9.7.4 to End",
+          "questions": [
+            {
+              "q": 1,
+              "type": "statement_pair",
+              "statements": [
+                { "label": "Statement I", "text": "Hydrogen peroxide can act as an oxidising agent as well as a reducing agent in both acidic and alkaline media." },
+                { "label": "Statement II", "text": "In the reaction of H₂O₂ with acidified KMnO₄, the oxidation state of oxygen changes from −1 in H₂O₂ to −2 in the liberated oxygen gas." }
+              ],
+              "options": [
+                "Both Statement I and Statement II are correct.",
+                "Both Statement I and Statement II are incorrect.",
+                "Statement I is correct but Statement II is incorrect.",
+                "Statement I is incorrect but Statement II is correct."
+              ],
+              "answer": "c",
+              "explanation": "Statement I is correct. Statement II is incorrect because in reducing reactions of H₂O₂, oxygen is oxidised from −1 (in H₂O₂) to 0 in elemental O₂(g).",
+              "ncert": "\"It acts as an oxidising as well as reducing agent in both acidic and alkaline media.\" 2MnO₄⁻ + 6H⁺ + 5H₂O₂ → 2Mn²⁺ + 8H₂O + 5O₂"
+            },
+            {
+              "q": 2,
+              "type": "assertion_reason",
+              "statements": [
+                { "label": "Assertion (A)", "text": "Containers of hydrogen peroxide must be kept completely free of dust particles." },
+                { "label": "Reason (R)", "text": "Dust particles can catalyse and induce explosive decomposition of hydrogen peroxide into water and oxygen." }
+              ],
+              "options": [
+                "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+                "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+                "(A) is true but (R) is false.",
+                "(A) is false but (R) is true."
+              ],
+              "answer": "a",
+              "explanation": "Both (A) and (R) are true, and (R) provides the exact reason given in the text.",
+              "ncert": "\"It is kept away from dust because dust can induce explosive decomposition of the compound.\""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

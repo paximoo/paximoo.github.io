@@ -1,0 +1,3 @@
+[submodule "Bookie"]
+	path = Bookie
+	url = https://github.com/paximoo/Bookie.git
